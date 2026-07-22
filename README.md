@@ -5,8 +5,8 @@ cream, made by hand in Bukit Panjang / Cashew, Singapore.
 Instagram: [@hannahsfirstfruits](https://www.instagram.com/hannahsfirstfruits/)
 
 This is **v1**: a simple, clear, mobile-first landing page. Orders are taken over
-WhatsApp / Instagram DM and paid via PayNow. The fuller online-ordering + admin
-roadmap lives in [`docs/REQUIREMENTS.md`](docs/REQUIREMENTS.md).
+WhatsApp / Instagram DM and paid via PayNow. (The fuller online-ordering + admin
+roadmap is kept privately, outside this repo.)
 
 ## Structure
 
@@ -15,7 +15,6 @@ index.html      the whole page
 styles.css      styling (warm cream + berry/banana palette, mobile-first)
 script.js       mobile nav + WhatsApp order links (edit CONFIG at the top)
 assets/         logo + photos go here (see assets/README.md)
-docs/           full website requirements / roadmap
 ```
 
 ## Editing the essentials (no coding needed)
