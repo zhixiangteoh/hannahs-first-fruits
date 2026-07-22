@@ -1,22 +1,17 @@
 # Image assets
 
-Drop your photos/logo here with these **exact filenames** and they appear
-automatically. Until a file exists, the site shows a clean text/emoji placeholder —
-nothing looks broken or overlapping.
+Files used by the site (replace in place, keep the same names):
 
-| Filename | Where it shows | Suggested size |
-|---|---|---|
-| `logo.png` | Header **and** the big hero logo | Transparent PNG, ~900 px wide |
-| `strawberry.jpg` | Strawberry Banana menu card | **Square** ~1000 × 1000 px |
-| `blueberry.jpg` | Blueberry Banana menu card | **Square** ~1000 × 1000 px |
-| `story.jpg` | "Our Story" section | ~1000 × 800 px |
-| `hero.jpg` | Social share preview only (Open Graph) | ~1200 × 630 px |
+| File | Where it shows |
+|---|---|
+| `logo.png` | Header + hero |
+| `strawberry.png` | Menu — Strawberry Banana card |
+| `blueberry.png` | Menu — Blueberry Banana card |
+| `poster.png` | Social share preview (Open Graph) only |
+| `favicon.svg` | Browser-tab icon |
 
-Tips:
-- Your existing brand images are perfect: the **terracotta logo** as `logo.png`
-  (ideally a transparent PNG so it sits on the cream background), and the two
-  **square product shots** (kraft cup on cream) as `strawberry.jpg` / `blueberry.jpg` —
-  the menu cards are square and cream, so they'll blend seamlessly.
-- JPG for photos, transparent PNG for the logo.
-- Keep files reasonably small (under ~500 KB each) so the page loads fast on mobile.
-- `favicon.svg` is the little browser-tab icon; already included, but you can replace it.
+Also in this folder but **not shown on the page** (kept for your own use):
+`menu-card.png`, `collection-card.png`, `lifestyle.png`.
+
+Note: `lifestyle.png` is ~24 MB — if you ever want to use it on the page, compress
+it first (aim for under ~500 KB) so it loads fast on mobile.

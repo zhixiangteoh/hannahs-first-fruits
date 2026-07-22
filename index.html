@@ -4,38 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hannah's First Fruits — Small-batch fruit ice cream, Singapore</title>
-  <meta name="description" content="Freshly churned happiness. Small-batch, 100% plant-based fruit ice cream from Bukit Panjang / Cashew, Singapore. Real food, guilt-free bliss — no dairy, no eggs." />
+  <meta name="description" content="Freshly churned happiness. Small-batch, 100% plant-based fruit ice cream from Bukit Panjang / Cashew, Singapore. Real food, no dairy, no eggs. Order on Instagram." />
   <meta name="theme-color" content="#ede6d8" />
 
   <meta property="og:title" content="Hannah's First Fruits" />
-  <meta property="og:description" content="Freshly churned happiness · 100% real food · Guilt-free bliss · Plant-based magic. Small-batch fruit ice cream, made by hand in Singapore." />
+  <meta property="og:description" content="Small-batch, plant-based fruit ice cream, made by hand in Singapore. Order on Instagram." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/hero.jpg" />
+  <meta property="og:image" content="assets/poster.png" />
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <!-- ══════════════════════════ HEADER ══════════════════════════ -->
   <header class="site-header" id="top">
     <a class="brand" href="#top" aria-label="Hannah's First Fruits — home">
-      <img src="assets/logo.png" alt="Hannah's First Fruits" class="brand__logo"
-           onerror="this.classList.add('is-missing')" />
-      <span class="brand__caps">Hannah's First Fruits</span>
+      <img src="assets/logo.png" alt="Hannah's First Fruits" class="brand__logo" />
     </a>
-
     <nav class="nav" aria-label="Primary">
       <a href="#menu">Menu</a>
-      <a href="#order">Order</a>
-      <a href="#story">Story</a>
       <a href="#collection">Collection</a>
       <a href="#faq">FAQ</a>
     </nav>
-
-    <a class="btn btn--pill order-link" href="#order">Order</a>
+    <a class="btn btn--pill" href="https://www.instagram.com/hannahsfirstfruits/" target="_blank" rel="noopener">Order</a>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
       <span></span><span></span><span></span>
     </button>
@@ -43,12 +37,9 @@
 
   <div class="mobile-nav" id="mobile-nav" hidden>
     <a href="#menu">Menu</a>
-    <a href="#order">Order</a>
-    <a href="#story">Story</a>
     <a href="#collection">Collection</a>
-    <a href="#allergens">Allergens</a>
     <a href="#faq">FAQ</a>
-    <a class="order-link" href="#order">Order now</a>
+    <a href="https://www.instagram.com/hannahsfirstfruits/" target="_blank" rel="noopener">Order on Instagram</a>
   </div>
 
   <!-- ══════════════════════════ MARQUEE ══════════════════════════ -->
@@ -68,285 +59,93 @@
   <main>
     <!-- ══════════════════════════ HERO ══════════════════════════ -->
     <section class="hero">
-      <!-- Your real logo drops in as assets/logo.png. Until then, a clean text fallback shows. -->
-      <div class="hero__brand">
-        <img src="assets/logo.png" alt="Hannah's First Fruits" class="hero__logo"
-             onerror="this.closest('.hero__brand').classList.add('no-logo'); this.remove();" />
-        <div class="wordmark" aria-hidden="true">
-          <span class="wordmark__script">Hannah's</span>
-          <span class="wordmark__caps">First Fruits</span>
-        </div>
-      </div>
-
-      <p class="lede">
-        The first &amp; best of the harvest — churned into 100% plant-based ice cream,
-        by hand, one small batch at a time. Real, whole fruit. No dairy, no eggs.
-      </p>
-      <div class="hero__actions">
-        <a class="btn btn--primary btn--lg order-link" href="#order">Order this week</a>
-        <a class="btn btn--ghost btn--lg" href="#menu">See the flavours</a>
-      </div>
-      <p class="hero__note">Freshly made to order · 48h notice · Max 15 tubs a week</p>
+      <img src="assets/logo.png" alt="Hannah's First Fruits" class="hero__logo" />
+      <p class="hero__tag">Small-batch, 100% plant-based fruit ice cream — made by hand in Bukit&nbsp;Panjang&nbsp;/&nbsp;Cashew, Singapore.</p>
+      <a class="btn btn--primary btn--lg" href="https://www.instagram.com/hannahsfirstfruits/" target="_blank" rel="noopener">Order on Instagram&nbsp;→</a>
+      <p class="hero__note">DM to order · 48h notice · Max 15 tubs a week</p>
     </section>
 
     <!-- ══════════════════════════ MENU ══════════════════════════ -->
     <section class="section" id="menu">
       <div class="section__head">
-        <p class="eyebrow">This week's menu</p>
-        <h2>Two flavours, both a little addictive</h2>
-        <p class="section__sub">More coming soon. Everything is 100% plant-based and made in small weekly batches.</p>
+        <h2>The menu</h2>
+        <p class="section__sub">Two flavours, 100% plant-based. <strong>6&nbsp;oz (180&nbsp;ml) — $9</strong> · <strong>1&nbsp;pint, 16&nbsp;oz (473&nbsp;ml) — $18</strong></p>
       </div>
-
       <div class="menu-grid">
-        <!-- Strawberry -->
-        <article class="flavour" data-stock="in">
-          <div class="flavour__media media-fallback flavour__media--strawberry" data-label="🍓">
-            <img src="assets/strawberry.jpg" alt="Strawberry Banana ice cream" onerror="this.remove()" />
-            <span class="stock-badge">In stock</span>
-          </div>
-          <div class="flavour__body">
-            <h3>Strawberry Banana</h3>
-            <p class="flavour__desc">Ripe strawberries and banana, churned smooth. Bright, creamy, naturally sweet.</p>
-            <ul class="sizes">
-              <li><span>6&nbsp;oz <em>(180&nbsp;ml)</em></span><span class="price">$9</span></li>
-              <li><span>1&nbsp;pint · 16&nbsp;oz <em>(473&nbsp;ml)</em></span><span class="price">$18</span></li>
-            </ul>
-            <a class="btn btn--primary btn--block order-link" href="#order" data-flavour="Strawberry Banana">Order Strawberry</a>
-          </div>
-        </article>
-
-        <!-- Blueberry -->
-        <article class="flavour" data-stock="in">
-          <div class="flavour__media media-fallback flavour__media--blueberry" data-label="🫐">
-            <img src="assets/blueberry.jpg" alt="Blueberry Banana ice cream" onerror="this.remove()" />
-            <span class="stock-badge">In stock</span>
-          </div>
-          <div class="flavour__body">
-            <h3>Blueberry Banana</h3>
-            <p class="flavour__desc">Blueberries and banana — deep, jammy, and just like açaí.</p>
-            <ul class="sizes">
-              <li><span>6&nbsp;oz <em>(180&nbsp;ml)</em></span><span class="price">$9</span></li>
-              <li><span>1&nbsp;pint · 16&nbsp;oz <em>(473&nbsp;ml)</em></span><span class="price">$18</span></li>
-            </ul>
-            <a class="btn btn--primary btn--block order-link" href="#order" data-flavour="Blueberry Banana">Order Blueberry</a>
-          </div>
-        </article>
+        <figure class="flavour">
+          <img src="assets/strawberry.png" alt="Strawberry Banana ice cream in a kraft tub, topped with fresh strawberries and banana" />
+        </figure>
+        <figure class="flavour">
+          <img src="assets/blueberry.png" alt="Blueberry Banana ice cream in a kraft tub, topped with fresh blueberries and banana" />
+        </figure>
       </div>
-      <p class="menu-foot">Weekly limit: <strong>15 tubs total</strong> across all flavours &amp; sizes, so we can keep every batch fresh.</p>
-    </section>
-
-    <!-- ══════════════════════════ HOW TO ORDER ══════════════════════════ -->
-    <section class="section section--tint" id="order">
-      <div class="section__head">
-        <p class="eyebrow">How to order</p>
-        <h2>Four simple steps</h2>
-        <p class="section__sub">A full online checkout is on the way. For now, ordering is quick and personal — straight over WhatsApp or Instagram.</p>
-      </div>
-
-      <ol class="steps">
-        <li>
-          <span class="steps__num">1</span>
-          <h3>Pick your tubs</h3>
-          <p>Choose flavours &amp; sizes from the menu — mix and match, e.g. 1× Strawberry pint + 2× Blueberry 6oz.</p>
-        </li>
-        <li>
-          <span class="steps__num">2</span>
-          <h3>Message Hannah</h3>
-          <p>Send your order with your name, collection or delivery preference, and date. Order at least <strong>48 hours ahead</strong>.</p>
-        </li>
-        <li>
-          <span class="steps__num">3</span>
-          <h3>Pay by PayNow</h3>
-          <p>You'll get the total and a PayNow / PayLah QR. Send a screenshot to confirm your order.</p>
-        </li>
-        <li>
-          <span class="steps__num">4</span>
-          <h3>Collect or receive</h3>
-          <p>Self-collect free in Bukit Panjang / Cashew, or have it delivered by courier. Packed in an insulated bag.</p>
-        </li>
-      </ol>
-
-      <div class="order-cta">
-        <a class="btn btn--primary btn--lg" id="whatsapp-btn" href="#" target="_blank" rel="noopener">Order on WhatsApp</a>
-        <a class="btn btn--ghost btn--lg" href="https://www.instagram.com/hannahsfirstfruits/" target="_blank" rel="noopener">Order via Instagram DM</a>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════ STORY ══════════════════════════ -->
-    <section class="section story" id="story">
-      <div class="story__media media-fallback" data-label="🌿">
-        <img src="assets/story.jpg" alt="Hannah making ice cream" onerror="this.remove()" />
-      </div>
-      <div class="story__text">
-        <p class="eyebrow">Our story</p>
-        <h2>The first &amp; best of the harvest</h2>
-        <p>
-          In the Bible, <em>first fruits</em> are the very first, best portion of the
-          harvest — set apart and offered to God in gratitude before anything else was
-          taken for oneself. An act of trust: giving the first and best, because He
-          deserves it and is the giver of it all.
-        </p>
-        <p>
-          Hannah's First Fruits was born out of that same spirit. It started small —
-          batches of fruit ice cream made in a home kitchen for friends — and has grown
-          into an offering: real, whole ingredients, no shortcuts, and a lot of care in
-          every batch.
-        </p>
-        <p>
-          Each flavour starts with fruit at its best: ripe, simple, unmasked by anything
-          artificial. No dairy, no eggs — just pure, healthy ingredients, done well.
-          Made by hand, one batch at a time. Thank you for being part of it.
-        </p>
-      </div>
+      <p class="menu-foot">Freshly made each week · limited to <strong>15 tubs total</strong> to keep every batch fresh. More flavours coming soon.</p>
     </section>
 
     <!-- ══════════════════════════ COLLECTION ══════════════════════════ -->
     <section class="section section--tint" id="collection">
       <div class="section__head">
-        <p class="eyebrow">Collection &amp; delivery</p>
-        <h2>Two ways to get your tubs</h2>
+        <h2>Collection &amp; delivery</h2>
       </div>
-
       <div class="collect-grid">
         <div class="collect-card">
           <p class="collect-card__tag">Self pickup</p>
           <p class="collect-card__price">Free</p>
-          <p class="collect-card__body">
-            Collect in the <strong>Bukit Panjang / Cashew</strong> area. The exact pickup
-            address is shared privately once your order is confirmed &amp; paid. Bring your
-            name / order ID — your ice cream is packed and ready at your slot, in an
-            insulated bag.
-          </p>
+          <p class="collect-card__body"><strong>Bukit Panjang / Cashew.</strong> Exact address shared once your order is confirmed &amp; paid.</p>
         </div>
         <div class="collect-card">
           <p class="collect-card__tag">Delivery</p>
           <p class="collect-card__price">~$15</p>
-          <p class="collect-card__body">
-            Charged based on the <strong>Grab Express</strong> price, or arrange your own
-            courier (Grab / Lalamove). Message Hannah to set it up and confirm the fee for
-            your address.
-          </p>
+          <p class="collect-card__body">Charged at the <strong>Grab Express</strong> rate, or arrange your own courier. Message to set up.</p>
         </div>
       </div>
-
-      <div class="info-grid" style="margin-top:1.6rem">
-        <div class="info-card">
-          <h3>🕒 Collection hours</h3>
-          <p><span class="editable">To be confirmed weekly — e.g. Weekdays 8–10pm, Fri/Sat 9am–6pm, Sun 1–6pm</span>. Pick a slot when you order.</p>
-        </div>
-        <div class="info-card">
-          <h3>⏳ Order cutoff</h3>
-          <p>Orders must be placed at least <strong>48 hours (2 days)</strong> before your collection date, so every batch is made fresh.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════ STORAGE ══════════════════════════ -->
-    <section class="section">
-      <div class="section__head">
-        <p class="eyebrow">Keeping it good</p>
-        <h2>Storage &amp; serving</h2>
-      </div>
-      <div class="info-grid info-grid--4">
-        <div class="info-card"><h3>Keep frozen</h3><p>Store frozen at all times.</p></div>
-        <div class="info-card"><h3>Best within 1–2 weeks</h3><p>Enjoy within 1–2 weeks of collection; within 1 month for best quality.</p></div>
-        <div class="info-card"><h3>Soften first</h3><p>Let it sit at room temperature for a few minutes before scooping.</p></div>
-        <div class="info-card"><h3>Once opened</h3><p>Reseal tightly and finish within 7 days for best quality.</p></div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════ ALLERGENS ══════════════════════════ -->
-    <section class="section section--tint" id="allergens">
-      <div class="section__head">
-        <p class="eyebrow">Allergen &amp; ingredient info</p>
-        <h2>Made with care in a home kitchen</h2>
-        <p class="section__sub">All flavours are 100% plant-based (vegan). Full ingredient lists are being finalised — if you have a food allergy, please message Hannah before ordering.</p>
-      </div>
-      <div class="info-grid">
-        <div class="info-card">
-          <h3>Strawberry Banana</h3>
-          <p><strong>Ingredients:</strong> <span class="editable">to be confirmed</span></p>
-          <p><strong>Allergens:</strong> <span class="editable">to be confirmed</span></p>
-        </div>
-        <div class="info-card">
-          <h3>Blueberry Banana</h3>
-          <p><strong>Ingredients:</strong> <span class="editable">to be confirmed</span></p>
-          <p><strong>Allergens:</strong> <span class="editable">to be confirmed</span></p>
-        </div>
-      </div>
-      <p class="menu-foot">Made in a home kitchen that also handles other ingredients. We can't guarantee a completely allergen-free environment — please check with us first if you have allergies.</p>
+      <p class="menu-foot">Order at least <strong>48 hours</strong> ahead · pick a collection slot when you order.</p>
     </section>
 
     <!-- ══════════════════════════ FAQ ══════════════════════════ -->
     <section class="section" id="faq">
       <div class="section__head">
-        <p class="eyebrow">Good to know</p>
-        <h2>Frequently asked</h2>
+        <h2>FAQ</h2>
       </div>
       <div class="faq">
         <details>
           <summary>How far in advance do I need to order?</summary>
-          <p>At least 48 hours (2 days) before your preferred collection date. Every order is freshly made, so Hannah needs a little lead time to prepare.</p>
+          <p>At least 48 hours (2 days) before your preferred collection date. Every order is freshly made, so Hannah needs a little lead time.</p>
         </details>
         <details>
           <summary>Do you deliver?</summary>
-          <p>Yes — self-collection is free in the Bukit Panjang / Cashew area, or we can deliver by courier for ~$15 (charged based on the Grab Express price). You're also welcome to arrange your own courier (Grab / Lalamove). Message Hannah to confirm the fee for your address.</p>
+          <p>Self-collection is free in Bukit Panjang / Cashew. Delivery is ~$15, charged at the Grab Express rate — or arrange your own courier (Grab / Lalamove). DM to confirm the fee for your address.</p>
         </details>
         <details>
           <summary>What payment methods do you accept?</summary>
-          <p>PayNow / PayLah only. At the point of order you'll receive a QR code with your order total.</p>
+          <p>PayNow / PayLah only. You'll get a QR with your order total when you order.</p>
         </details>
         <details>
-          <summary>What if my preferred time slot isn't available?</summary>
-          <p>Slots are limited to keep every batch fresh. Please pick the next available slot, or message Hannah on Instagram / WhatsApp to check if it can be accommodated.</p>
+          <summary>How should I store it?</summary>
+          <p>Keep frozen at all times. Best within 1–2 weeks (within 1 month for best quality). Let it soften at room temperature for a few minutes before scooping; once opened, reseal and finish within 7 days.</p>
         </details>
         <details>
-          <summary>Can I cancel or change my order?</summary>
-          <p>Cancellations more than 24 hours before your slot get a full refund. Flavour/size changes may be possible if requested before Hannah starts preparing — message as early as you can.</p>
+          <summary>Any allergens? Is it vegan?</summary>
+          <p>Everything is 100% plant-based — no dairy, no eggs. Made in a home kitchen that also handles other ingredients, so we can't guarantee an allergen-free environment. If you have a food allergy, please message before ordering.</p>
         </details>
         <details>
-          <summary>What if I can't collect my order?</summary>
-          <p>One-time rescheduling is allowed for self-collection — just let Hannah know at least 24 hours in advance.</p>
+          <summary>What if my preferred slot isn't available?</summary>
+          <p>Slots are limited to keep every batch fresh. Pick the next available one, or DM to check if it can be accommodated.</p>
         </details>
         <details>
-          <summary>Is everything vegan?</summary>
-          <p>Yes — all flavours are 100% plant-based, made without dairy or eggs.</p>
+          <summary>Can I cancel, change, or reschedule?</summary>
+          <p>Cancellations more than 24 hours before your slot get a full refund. Flavour/size changes may be possible before Hannah starts preparing. One-time rescheduling for self-collection is fine with 24 hours' notice.</p>
         </details>
       </div>
-    </section>
-
-    <!-- ══════════════════════════ FINAL CTA ══════════════════════════ -->
-    <section class="final-cta">
-      <p class="eyebrow eyebrow--light">Freshly churned happiness</p>
-      <h2>Ready for this week's batch?</h2>
-      <p class="final-cta__sub">Order at least 48 hours ahead — tubs are limited to 15 a week.</p>
-      <a class="btn btn--cream btn--lg order-link" href="#order">Order now</a>
     </section>
   </main>
 
   <!-- ══════════════════════════ FOOTER ══════════════════════════ -->
   <footer class="site-footer" id="contact">
-    <div class="footer__cols">
-      <div class="footer__brand">
-        <span class="footer__mark">Hannah's First Fruits</span>
-        <p>Small-batch, plant-based fruit ice cream. Made by hand in Bukit Panjang / Cashew, Singapore.</p>
-      </div>
-      <div>
-        <h4>Find us</h4>
-        <ul>
-          <li><a href="https://www.instagram.com/hannahsfirstfruits/" target="_blank" rel="noopener">Instagram @hannahsfirstfruits</a></li>
-          <li><a href="#" id="whatsapp-footer" target="_blank" rel="noopener">WhatsApp Hannah</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#order">How to order</a></li>
-          <li><a href="#collection">Collection &amp; delivery</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-      </div>
+    <div class="footer__cta">
+      <h2>Order this week's batch</h2>
+      <a class="btn btn--cream btn--lg" href="https://www.instagram.com/hannahsfirstfruits/" target="_blank" rel="noopener">Message us on Instagram&nbsp;→</a>
+      <p>@hannahsfirstfruits · WhatsApp shared after your order</p>
     </div>
 
     <details class="legal">
@@ -354,12 +153,12 @@
       <div class="legal__body">
         <h4>Terms &amp; Conditions</h4>
         <ol>
-          <li>Orders are for self-collection (free) in the Bukit Panjang / Cashew area, or courier delivery arranged with Hannah. The exact pickup address is shared upon order confirmation.</li>
+          <li>Orders are for self-collection (free) in Bukit Panjang / Cashew, or courier delivery arranged with Hannah. Exact address shared upon confirmation.</li>
           <li>Full payment is required to confirm your order.</li>
-          <li>Hannah's First Fruits is a home-based food business. Everything is made with care in a home kitchen; please tell us of any allergies before ordering, as we can't guarantee a completely allergen-free environment.</li>
+          <li>Home-based food business — made with care in a home kitchen. Please tell us of any allergies before ordering, as we can't guarantee an allergen-free environment.</li>
         </ol>
         <h4>Privacy Policy</h4>
-        <p>We collect your name, contact number, and payment confirmation (e.g. screenshot) solely to process, confirm, and fulfil your order, and to contact you about collection or delivery. We don't sell or share your data with third parties. Data is kept only as long as needed for order fulfilment and basic record-keeping — you may request deletion by contacting us directly. (PDPA compliant.)</p>
+        <p>We collect your name, contact number, and payment confirmation solely to process, confirm, and fulfil your order, and to contact you about collection/delivery. We don't sell or share your data. It's kept only as long as needed for order fulfilment; request deletion any time. (PDPA compliant.)</p>
       </div>
     </details>
 

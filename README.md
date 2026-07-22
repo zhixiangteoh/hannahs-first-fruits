@@ -4,41 +4,32 @@ Landing page for **Hannah's First Fruits** — small-batch, plant-based fruit ic
 cream, made by hand in Bukit Panjang / Cashew, Singapore.
 Instagram: [@hannahsfirstfruits](https://www.instagram.com/hannahsfirstfruits/)
 
-This is **v1**: a simple, clear, mobile-first landing page. Orders are taken over
-WhatsApp / Instagram DM and paid via PayNow. (The fuller online-ordering + admin
-roadmap is kept privately, outside this repo.)
+A simple, mobile-first landing page: brand, menu, collection & delivery, and FAQ.
+Ordering is done by DM on Instagram. Live at
+**https://zhixiangteoh.github.io/hannahs-first-fruits/** (auto-deploys on push to `main`).
 
 ## Structure
 
 ```
-index.html      the whole page
-styles.css      styling (warm cream + berry/banana palette, mobile-first)
-script.js       mobile nav + WhatsApp order links (edit CONFIG at the top)
-assets/         logo + photos go here (see assets/README.md)
+index.html   the whole page
+styles.css   styling (cream paper + terracotta, mobile-first)
+script.js    mobile nav + footer year
+assets/      logo + product photos (see assets/README.md)
 ```
 
-## Editing the essentials (no coding needed)
+## Editing without code
 
-- **WhatsApp number** — open `script.js`, set `whatsapp` in `CONFIG` to your number
-  in international format (e.g. `"6581234567"`). Until it's set, order buttons point
-  to Instagram.
-- **Photos & logo** — drop files into `assets/` using the filenames in
-  [`assets/README.md`](assets/README.md).
-- **Prices / flavours / stock** — edit the menu section in `index.html`. To mark a
-  flavour sold out, change `data-stock="in"` to `data-stock="out"` on its
-  `<article class="flavour">` and update the "In stock" badge text.
-- **Collection hours, ingredients, allergens** — search `index.html` for the
-  `editable` / "to be confirmed" spots and fill them in.
+- **Prices / flavours** — edit the `#menu` section in `index.html`.
+- **Collection & delivery, FAQ** — edit the `#collection` and `#faq` sections.
+- **Photos / logo** — replace the files in `assets/` (keep the same names — see
+  `assets/README.md`).
+- **Order link** — every "Order" button points to the Instagram profile; search
+  `index.html` for `instagram.com/hannahsfirstfruits` to change it.
 
-## Running it
+## Running locally
 
-It's a static site — no build step. Just open `index.html`, or serve locally:
+Static site, no build step:
 
 ```bash
 python3 -m http.server 8000   # then visit http://localhost:8000
 ```
-
-## Publishing
-
-Works on any static host — GitHub Pages, Netlify, Cloudflare Pages, Vercel.
-For GitHub Pages: repo **Settings → Pages → Deploy from branch**.
