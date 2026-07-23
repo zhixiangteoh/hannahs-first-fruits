@@ -55,8 +55,10 @@ const STOCK = {
     el.classList.add("is-out");
     textEl.innerHTML =
       'Sold out this week — <a href="' + STOCK.instagram + '" target="_blank" rel="noopener">DM for the next batch</a>';
+  } else if (left <= 3) {
+    el.classList.add("is-low");
+    textEl.innerHTML = "Only <strong>" + left + "</strong> tub" + (left === 1 ? "" : "s") + " left this week";
   } else {
-    if (left <= 3) el.classList.add("is-low");
     textEl.innerHTML = "<strong>" + left + "</strong> of " + total + " tubs left this week";
   }
 })();
