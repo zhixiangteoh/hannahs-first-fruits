@@ -94,16 +94,10 @@ a  { color: inherit; text-decoration: none; }
 .marquee__track span { font-family: var(--font-display); font-size: 1.02rem; letter-spacing: .04em; }
 @keyframes scroll { to { transform: translateX(-50%); } }
 
-/* desktop: static row, evenly spread across the width */
-.banner__row { display: none; }
+/* desktop: same scrolling ticker, phrases spread wider */
 @media (min-width: 820px) {
-  .banner__row {
-    display: flex; align-items: center; justify-content: space-between;
-    list-style: none; margin: 0 auto; max-width: var(--maxw);
-    padding: .6rem clamp(1.4rem, 4vw, 2.4rem); gap: 1rem;
-  }
-  .banner__row li { font-family: var(--font-display); font-size: 1.08rem; letter-spacing: .05em; }
-  .marquee { display: none; }
+  .marquee__track { gap: 3.5rem; padding: .7rem 0; animation-duration: 40s; }
+  .marquee__track span { font-size: 1.15rem; }
 }
 
 /* ───────── stock counter (centered solid pill) ───────── */
