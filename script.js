@@ -18,7 +18,9 @@
    fallback numbers below are shown so the banner never breaks.
    ───────────────────────────────────────────────────────────── */
 const STOCK = {
-  sheetCsvUrl: "",          // ← paste your published Google Sheet CSV link here
+  // Live count — reads cell A1 (tubs left) and B1 (weekly total) from the
+  // "live stock" Google Sheet. Edit A1 in the Sheets app to update the site.
+  sheetCsvUrl: "https://docs.google.com/spreadsheets/d/10O0Pbx-QhYhLDmYqnXIt8dRVtSgwZnQLzpvztX4rD0U/gviz/tq?tqx=out:csv&range=A1:B1",
   fallbackLeft: 10,
   fallbackTotal: 15,
   instagram: "https://www.instagram.com/hannahsfirstfruits/",
