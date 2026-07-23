@@ -25,9 +25,6 @@ assets/      logo + product photos (see assets/README.md)
   `assets/README.md`).
 - **Order link** — every "Order" button points to the Instagram profile; search
   `index.html` for `instagram.com/hannahsfirstfruits` to change it.
-- **"Tubs left this week" counter** — edit `stock.json` (`"left"` / `"total"`) and
-  commit; the site updates a minute later. For a version you can change *without*
-  committing (e.g. from a Google Sheet), see the notes at the top of `script.js`.
 
 ## Running locally
 
