@@ -106,39 +106,31 @@ a  { color: inherit; text-decoration: none; }
   .marquee { display: none; }
 }
 
-/* ───────── stock counter (centered pill) ───────── */
-.stock { display: flex; justify-content: center; padding: 1.4rem 1rem .2rem; }
+/* ───────── stock counter (centered solid pill) ───────── */
+.stock { display: flex; justify-content: center; padding: 1.5rem 1rem .3rem; }
 .stock__pill {
-  display: inline-flex; align-items: center; gap: .6rem;
-  padding: .5rem 1.15rem;
-  background: rgba(191, 122, 84, .10);
-  border: 1px solid rgba(191, 122, 84, .38);
+  display: inline-flex; align-items: center; gap: .7rem;
+  padding: .72rem 1.7rem;
+  background: var(--clay); color: #fff;
   border-radius: 999px;
-  box-shadow: var(--shadow-sm);
-  color: var(--ink); font-size: .92rem; letter-spacing: .01em; line-height: 1;
+  box-shadow: 0 14px 30px -14px rgba(165, 98, 58, .7);
+  font-size: 1.1rem; letter-spacing: .01em; line-height: 1;
 }
-.stock__text strong { font-family: var(--font-display); font-weight: 600; font-size: 1.28em; color: var(--clay-deep); }
+.stock__text strong { font-family: var(--font-display); font-weight: 600; font-size: 1.4em; color: #fff; }
 .stock__dot {
-  width: 8px; height: 8px; border-radius: 50%; background: var(--clay); flex: none;
+  width: 9px; height: 9px; border-radius: 50%; background: #fff; flex: none;
   animation: ripple 2s ease-out infinite;
 }
 @keyframes ripple {
-  0%   { box-shadow: 0 0 0 0 rgba(191, 122, 84, .5); }
-  70%  { box-shadow: 0 0 0 7px rgba(191, 122, 84, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(191, 122, 84, 0); }
+  0%   { box-shadow: 0 0 0 0 rgba(255, 255, 255, .55); }
+  70%  { box-shadow: 0 0 0 8px rgba(255, 255, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
 }
-/* low stock (≤3) — warmer, urgent */
-.stock.is-low .stock__pill { background: rgba(192, 73, 47, .10); border-color: rgba(192, 73, 47, .42); }
-.stock.is-low .stock__text strong { color: #c0492f; }
-.stock.is-low .stock__dot { background: #c0492f; animation-name: ripple-red; }
-@keyframes ripple-red {
-  0%   { box-shadow: 0 0 0 0 rgba(192, 73, 47, .5); }
-  70%  { box-shadow: 0 0 0 7px rgba(192, 73, 47, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(192, 73, 47, 0); }
-}
-/* sold out — muted */
-.stock.is-out .stock__pill { background: rgba(38, 34, 28, .05); border-color: var(--line); color: var(--ink-soft); }
-.stock.is-out .stock__dot { background: #afa595; animation: none; }
+/* low stock (≤3) — solid red, urgent */
+.stock.is-low .stock__pill { background: #c0492f; box-shadow: 0 14px 30px -14px rgba(192, 73, 47, .7); }
+/* sold out — muted solid */
+.stock.is-out .stock__pill { background: #d8cdbb; color: var(--ink-soft); box-shadow: var(--shadow-sm); }
+.stock.is-out .stock__dot { background: #a89e8d; animation: none; }
 .stock.is-out a { color: var(--clay-deep); font-weight: 600; }
 @media (prefers-reduced-motion: reduce) { .stock__dot { animation: none; } }
 
