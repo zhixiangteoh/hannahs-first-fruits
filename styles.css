@@ -106,6 +106,21 @@ a  { color: inherit; text-decoration: none; }
   .marquee { display: none; }
 }
 
+/* ───────── stock counter ───────── */
+.stock {
+  display: flex; align-items: center; justify-content: center; gap: .55rem;
+  padding: .55rem 1rem; text-align: center;
+  font-size: .82rem; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--ink-soft); background: var(--paper-2); border-bottom: 1px solid var(--line);
+}
+.stock strong { color: var(--clay-deep); font-weight: 600; }
+.stock__dot { width: 8px; height: 8px; border-radius: 50%; background: var(--clay); flex: none; animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .4; transform: scale(.7); } }
+.stock.is-low strong { color: #c0492f; }
+.stock.is-out { color: var(--ink-soft); }
+.stock.is-out .stock__dot { background: #afa595; animation: none; }
+.stock.is-out a { color: var(--clay-deep); font-weight: 600; }
+
 /* ───────── sections ───────── */
 .section { max-width: var(--maxw); margin: 0 auto; padding: clamp(3rem, 7vw, 5rem) clamp(1.1rem, 4vw, 2rem); }
 .section--tint { max-width: none; background: var(--paper-2); border-block: 1px solid var(--line); }
